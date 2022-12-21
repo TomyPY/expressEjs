@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(37, 0, 48);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input ::placeholder{
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    text-align: center;
+}
+
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input{
+    height: 60px;
+    margin: 100px 0px;
+    width: 1000px;
+    background-color: rgba(0, 0, 255, 0.185);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.486);
+    color: white;
+
+}
+
+.title-container{
+    display: inline-block;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    background-color: rgba(0, 0, 255, 0.404);
+    border-radius: 20px;
+    border: none;
+    color: white;
+    height: 100px;
+    font-size: 50px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+nav{
+    width: 100%;
+}
+
+.item{
+    color: white;
+    margin: 30px;
+}
+
+.title{
+    color: white;
+
+    margin: 10px;
+}

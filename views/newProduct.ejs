@@ -1,0 +1,35 @@
+<%- include('partials/header'); %>
+
+    <nav class="nav-container">
+
+        <h2 class="title">Products list:</h2>
+
+        <ul>
+            <% products.forEach(function(product){ %>
+                <li class="item"> ID:<%= product._id %> Name:<%= product.product %> Price:<%= product.price %> Thumbnail:<%= product.thumbnail %></li>
+            <% }); %>
+        </ul>
+
+    </nav>
+
+
+    <div class="form-container">
+        <div class="title-container">
+            <h1 class="title">Upload your product!</h1>
+        </div>
+        
+        <div class="form-wrapper">
+
+            <form action="http://localhost:8080/api/products" method="post">
+
+                <input type="text" name="Product" placeholder="Product">
+                <input type="number" name="price" placeholder="Price">
+                <input type="text" name="thumbnail" placeholder="Thumbnail">
+
+                <button>Send</button>
+            </form>
+        </div>
+
+    </div>
+    
+<%- include('partials/footer'); %>
